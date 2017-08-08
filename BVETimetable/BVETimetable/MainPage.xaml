@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BVETimetable"
+             x:Class="BVETimetable.MainPage"
+             Title="BVE日本線　運転支援アプリ">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="0,20,0,0"></OnPlatform>
+    </ContentPage.Padding>
+    
+    <!--ビューの書式-->
+    <StackLayout HorizontalOptions="Center"
+                 VerticalOptions="Center">
+    <!--運転支援エリア選択-->
+        <Label Text="運転時刻表" />
+        <Button Text="エリアから選択" Clicked="Button_Clicked"/>
+        
+        <!--列車番号から検索-->
+        <Label Text="運転列車検索"></Label>
+        <Button Text="検索" Clicked="Button_Clicked_1"/>
+        
+        <!--時刻表閲覧-->
+        <Label Text="時刻表サイトで閲覧"/>
+        <Button Text="時刻表サイトへ移動" Clicked="Button_Clicked_2"/>
+        
+        <!--About-->
+        <Button Text="このアプリについて" Clicked="Button_Clicked_3" />
+
+    </StackLayout>
+
+</ContentPage>
