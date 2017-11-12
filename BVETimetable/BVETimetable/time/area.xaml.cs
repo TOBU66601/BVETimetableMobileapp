@@ -35,6 +35,7 @@ namespace BVETimetable.time
             {
                 Padding = new Thickness(0, Device.OnPlatform(20, 0, 0), 0, 0),
                 Children = {listview}
+
                 //var cell = new DataTemplate(typeof(ImageCell));
             //cell.SetBinding(ImageCell.ImageSourceProperty, "Url");
             //cell.SetBinding(TextCell.TextProperty, "Name");
@@ -42,7 +43,12 @@ namespace BVETimetable.time
         };
 
 		}
-	}
+
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
+        }
+    }
 
 
 

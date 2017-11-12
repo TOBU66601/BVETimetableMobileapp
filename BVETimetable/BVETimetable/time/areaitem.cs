@@ -4,11 +4,31 @@ using System.Text;
 
 namespace BVETimetable.time
 {
+
+
     class areaitem
     {
-        public String area { get; set; }
-        public string ds { get; set; }
+        private void Locationarea () {
+            //syori 
+
+        }
+
+        public String area { private get; set; }
+        public string ds { private get; set; }
 
 
+        //
+        static  void Locarionarea1()
+        {
+            List<Location> all = new List<Location>();
+            StringBuilder stringBuilder = new StringBuilder();
+
+            //
+        }
+
+        private class Location
+        {
+            //処理
+        }
     }
 }
