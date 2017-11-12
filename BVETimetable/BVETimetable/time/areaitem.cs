@@ -7,6 +7,8 @@ namespace BVETimetable.time
     class areaitem
     {
         public String area { get; set; }
-        public String ds { get; set; }
+        public string ds { get; set; }
+
+
     }
 }

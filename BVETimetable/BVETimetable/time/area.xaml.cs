@@ -20,7 +20,11 @@ namespace BVETimetable.time
             //Listviewを作る
             var ar = new List<areaitem>()
             {
-                new areaitem { area = "北海道", ds = "第1DS" },new areaitem { area = "東北" }
+                new areaitem { area = "北海道", ds = "第1DS" },
+                new areaitem { area = "盛岡",ds="第一DS" },
+                new areaitem {area="仙台",ds="第一DS" },
+                new areaitem {area="首都圏",ds="第一DS" },
+
             };
             var listview = new ListView
             {
