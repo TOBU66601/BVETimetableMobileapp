@@ -37,15 +37,16 @@ namespace BVETimetable.time
 
             //セル選択→上から行って、北海道フォルダのページへ画面推移
 
-
             //arealist.ItemSelected += (sender, e) =>              {      _select = _loacls[_page1.IndexOf((ItemClass)(arealist.SelectedItem))];};
 
+            
 
-
-            // セルの選択　ナビゲーションページNextPage1に画面遷移
             arealist.ItemTapped += async (sender, args) =>
             {                await Navigation.PushModalAsync(new hokkaido.kouro()); arealist.SelectedItem = "北海道";};
 
+
+            arealist.ItemTapped += async (sender, args) =>
+            { await Navigation.PushModalAsync(new tohoku.kouro()); arealist.SelectedItem = "東北"; };
 
 
         }
