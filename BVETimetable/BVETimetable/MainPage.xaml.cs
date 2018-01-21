@@ -11,14 +11,14 @@ namespace BVETimetable
     {
         public MainPage()
         {
-         
+            InitializeComponent();
         }
 
 
 
 
 
-
+        //ボタンごとにリンク設定を張る
 
         private void Button_Clicked_1(object sender, EventArgs e)
         {
@@ -35,6 +35,7 @@ namespace BVETimetable
             Navigation.PushAsync(new cr(), true);
         }
 
+        //地域選択の部分
         private void Button_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new time.area(), true);

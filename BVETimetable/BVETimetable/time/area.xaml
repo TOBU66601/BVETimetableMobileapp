@@ -3,9 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BVETimetable.time.area"
              Title="エリア選択">
-
-
-
-    <ListView x:name="Arealistview"></ListView>
-    
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <ListView x:Name="arealist"
+                      Header="地域を選択してください。"
+                      RowHeight="60" 
+                     >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Word}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                
+                
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>
