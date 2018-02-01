@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
@@ -10,46 +9,43 @@ using Xamarin.Forms.Xaml;
 
 namespace BVETimetable.time
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class area : ContentPage
-	{
-		public area ()
-		{
-			InitializeComponent ();
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class area : ContentPage
+    {
+        public ObservableCollection<string> Items { get; set; }
 
-            //Listviewを作る
-            var ar = new List<areaitem>()
-            {
-                new areaitem { area = "北海道", ds = "第1DS" },
-                new areaitem { area = "盛岡",ds="第一DS" },
-                new areaitem {area="仙台",ds="第一DS" },
-                new areaitem {area="首都圏",ds="第一DS" },
-
-            };
-            var listview = new ListView
-            {
-                ItemsSource = ar,
-                RowHeight=70
-            };
-            Content = new StackLayout
-            {
-                Padding = new Thickness(0, Device.OnPlatform(20, 0, 0), 0, 0),
-                Children = {listview}
-
-                //var cell = new DataTemplate(typeof(ImageCell));
-            //cell.SetBinding(ImageCell.ImageSourceProperty, "Url");
-            //cell.SetBinding(TextCell.TextProperty, "Name");
-            //cell.SetBinding(TextCell.DetailProperty, new Binding("Age", stringFormat: "{0}才"));
-        };
-
-		}
-
-        private void InitializeComponent()
+        public area()
         {
-            throw new NotImplementedException();
+            InitializeComponent();
+
+            Title = "エリア選択"; //XAMLに書くとエラー起こすので、あえてここに書いた。
+            Items = new ObservableCollection<string>
+            {
+                "Item 1",
+                "Item 2",
+                "Item 3",
+                "Item 4",
+                "Item 5"
+            };
+			
+			MyListView.ItemsSource = Items;
+        }
+
+        async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            //タップ時は文字の読み取りができるのだろうか。その際に、例としてItem1→１という動作もしくはページ移動の動作を再度繰り返す。
+
+            if (e.Item == null)
+                return; //何もない時
+
+            await DisplayAlert("Item Tapped", "An item was tapped.", "OK");
+
+     
+                
+ 
+
+            //Deselect Item
+            //string ((ListView)sender).SelectedItem == "Item 1";
         }
     }
-
-
-
 }

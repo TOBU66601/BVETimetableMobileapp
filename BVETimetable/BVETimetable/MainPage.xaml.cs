@@ -11,15 +11,16 @@ namespace BVETimetable
     {
         public MainPage()
         {
-         
+            InitializeComponent(); //これがないとXAMLから読み出すことができない。
         }
 
+        //エリア選択のボタン
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new time.area(), true);
+        }
 
-
-
-
-
-
+        
         private void Button_Clicked_1(object sender, EventArgs e)
         {
 
@@ -34,13 +35,14 @@ namespace BVETimetable
         {
             Navigation.PushAsync(new cr(), true);
         }
-
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new time.area(), true);
         }
+            
+            
+  
+
+
     }
-}
+
             
 
     
