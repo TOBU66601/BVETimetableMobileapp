@@ -15,14 +15,14 @@ namespace BVETimetable.time
     {
         // 任意のListViewを生成する
         ObservableCollection<ItemClass> _page1 = new ObservableCollection<ItemClass>();
-        
+
         //任意の文字列の設定（ここに追加する）
         public string[] _loacls =
         {
-            "北海道","東北","東京近郊","東京電車特定"
+            "北海道","東北",　//"東京近郊","東京電車特定"
         };
         public string _select;
-        
+
         public area()
         {
             InitializeComponent();
@@ -37,21 +37,26 @@ namespace BVETimetable.time
 
             //セル選択→上から行って、北海道フォルダのページへ画面推移
 
-            //arealist.ItemSelected += (sender, e) =>              {      _select = _loacls[_page1.IndexOf((ItemClass)(arealist.SelectedItem))];};
+            arealist.ItemTapped += async (sender, args) => {
+                var word = (arealist.SelectedItem as ItemClass).Word;
+                Page targetPage;
+                switch (word)
+                {
+                    case "北海道":
+                        targetPage = new hokkaido.kouro();
+                        break;
 
-            
+                    case "東北":
+                        targetPage = new tohoku.kouro();
+                        break;
+                        //以下略
+                }
 
-            arealist.ItemTapped += async (sender, args) =>
-            {                await Navigation.PushModalAsync(new hokkaido.kouro()); arealist.SelectedItem = "北海道";};
 
-
-            arealist.ItemTapped += async (sender, args) =>
-            { await Navigation.PushModalAsync(new tohoku.kouro()); arealist.SelectedItem = "東北"; };
-
+                await Navigation.PushModalAsync(targetPage);
+            };
 
         }
-
-
     }
 
     public class ItemClass

@@ -15,6 +15,7 @@ namespace BVETimetable.time.hokkaido
 		public kouro ()
 		{
 			InitializeComponent ();
+
 		}
 	}
 }
