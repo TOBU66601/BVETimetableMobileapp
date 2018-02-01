@@ -19,7 +19,7 @@ namespace BVETimetable.time
         //任意の文字列の設定（ここに追加する）
         public string[] _loacls =
         {
-            "北海道","東北",　//"東京近郊","東京電車特定"
+            "北海道","東北",　"東京近郊",//"東京電車特定"
         };
         public string _select;
 
@@ -40,6 +40,8 @@ namespace BVETimetable.time
             arealist.ItemTapped += async (sender, args) => {
                 var word = (arealist.SelectedItem as ItemClass).Word;
                 Page targetPage;
+
+
                 switch (word)
                 {
                     case "北海道":
@@ -49,11 +51,18 @@ namespace BVETimetable.time
                     case "東北":
                         targetPage = new tohoku.kouro();
                         break;
-                        //以下略
+
+                        
+
+                        //同様の処理をさせる
+
                 }
 
-
+                
                 await Navigation.PushModalAsync(targetPage);
+                //await DisplayAlert("Item Tapped", "An item was tapped.", "OK");だと全部アラート出る
+
+
             };
 
         }
