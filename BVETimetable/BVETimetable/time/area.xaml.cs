@@ -1,51 +1,64 @@
 ﻿using System;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.Collections.ObjectModel; //
 
 namespace BVETimetable.time
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class area : ContentPage
     {
-        public ObservableCollection<string> Items { get; set; }
-
+        // 任意のListViewを生成する
+        ObservableCollection<ItemClass> _page1 = new ObservableCollection<ItemClass>();
+        
+        //任意の文字列の設定（ここに追加する）
+        public string[] _loacls =
+        {
+            "北海道","東北","東京近郊","東京電車特定"
+        };
+        public string _select;
+        
         public area()
         {
             InitializeComponent();
+            // iOSだけ、上部に余白をとる
+            Padding = new Thickness(0, Device.OnPlatform(20, 0, 0), 0, 0);
 
-            Title = "エリア選択"; //XAMLに書くとエラー起こすので、あえてここに書いた。
-            Items = new ObservableCollection<string>
+            for (int i = 0; i < _loacls.Length; i++)
             {
-                "Item 1",
-                "Item 2",
-                "Item 3",
-                "Item 4",
-                "Item 5"
-            };
-			
-			MyListView.ItemsSource = Items;
+                _page1.Add(new ItemClass { Word = _loacls[i] });
+            }
+            arealist.ItemsSource = _page1;
+
+            //セル選択→上から行って、北海道フォルダのページへ画面推移
+
+            //arealist.ItemSelected += (sender, e) =>              {      _select = _loacls[_page1.IndexOf((ItemClass)(arealist.SelectedItem))];};
+
+            
+
+            arealist.ItemTapped += async (sender, args) =>
+            {                await Navigation.PushModalAsync(new hokkaido.kouro()); arealist.SelectedItem = "北海道";};
+
+
+            arealist.ItemTapped += async (sender, args) =>
+            { await Navigation.PushModalAsync(new tohoku.kouro()); arealist.SelectedItem = "東北"; };
+
+
         }
 
-        async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
-        {
-            //タップ時は文字の読み取りができるのだろうか。その際に、例としてItem1→１という動作もしくはページ移動の動作を再度繰り返す。
 
-            if (e.Item == null)
-                return; //何もない時
-
-            await DisplayAlert("Item Tapped", "An item was tapped.", "OK");
-
-     
-                
- 
-
-            //Deselect Item
-            //string ((ListView)sender).SelectedItem == "Item 1";
-        }
     }
+
+    public class ItemClass
+    {
+        public string Word { get; set; }
+    }
+
+
+    //北海道が選択されたとき
 }

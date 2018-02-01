@@ -25,20 +25,9 @@ namespace BVETimetable
             
         }
 
-        public class TitleWebViewRender : WebView
-        {
-            public string PageTitle { get; internal set; }
-        }
+        
 
-
-        public static readonly BindableProperty PageTitleProperty = BindableProperty.Create<TitleWebViewRender, string>(v => v.PageTitle, null, BindingMode.OneWayToSource);
-
-            public string PageTitle
-            {
-                get { return (string)GetValue(PageTitleProperty); }
-                set { SetValue(PageTitleProperty, value); }
-            }
-        }
+    }
     }
    
 
