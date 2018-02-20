@@ -59,8 +59,8 @@ namespace BVETimetable.time
                 }
 
                 
-                await Navigation.PushModalAsync(targetPage);
-                //await DisplayAlert("Item Tapped", "An item was tapped.", "OK");だと全部アラート出る
+                //await Navigation.PushModalAsync(targetPage);
+                await DisplayAlert("Item Tapped", "An item was tapped.", "OK");//だと全部アラート出る
 
 
             };
