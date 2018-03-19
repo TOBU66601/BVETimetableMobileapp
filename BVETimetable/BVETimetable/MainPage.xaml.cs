@@ -27,7 +27,12 @@ namespace BVETimetable
 
         private void Button_Clicked_2(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new timesite(), true);
+            //ボタンを押した際のイベント
+            var result = DisplayAlert("お知らせ", "外部サイトを表示します", "いいえ", "はい");
+
+            //text=result.ToString;
+
+            Device.OpenUri(new Uri("http://bvedrive.azurewebsites.net"));
         }
 
         private void Button_Clicked_3(object sender, EventArgs e)
