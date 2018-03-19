@@ -12,7 +12,7 @@
                      >
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell Text="{Binding Word}" />
+                        <TextCell Text="{Binding .}" />
                     </DataTemplate>
                 </ListView.ItemTemplate>
                 
