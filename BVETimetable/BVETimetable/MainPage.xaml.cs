@@ -20,19 +20,30 @@ namespace BVETimetable
 
         //ボタンごとにリンク設定を張る
 
+            //個別列車検索
         private void Button_Clicked_1(object sender, EventArgs e)
         {
-
+            DisplayAlert("お知らせ", "この機能は現在利用できません", "OK");
         }
+
 
         private void Button_Clicked_2(object sender, EventArgs e)
         {
-            //ボタンを押した際のイベント
-            var result = DisplayAlert("お知らせ", "外部サイトを表示します", "いいえ", "はい");
+            //ボタンを押した際のイベント（挙動の順番がおかしい）
+          
+                var answer = await DisplayAlert("お知らせ", "外部サイトを表示します",  "はい","いいえ");
 
-            //text=result.ToString;
+            if (answer)
+            {
+                Device.OpenUri(new Uri("http://bvedrive.azurewebsites.net"));
 
-            Device.OpenUri(new Uri("http://bvedrive.azurewebsites.net"));
+            }
+            else
+            {
+                
+            }
+            
+
         }
 
         private void Button_Clicked_3(object sender, EventArgs e)
