@@ -1,12 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BVETimetable.time.hokkaido.kouro">
+             x:Class="BVETimetable.time.hokkaido.kouro"
+             Title="行路・時刻表選択">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="北海道のページ（行路いっぱいあるよ）"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ListView x:Name="kourolist"
+                      Header="行路"
+                      RowHeight="60" 
+                     >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding .}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
