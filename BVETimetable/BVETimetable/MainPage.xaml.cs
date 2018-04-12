@@ -31,17 +31,9 @@ namespace BVETimetable
         {
             //ボタンを押した際のイベント（挙動の順番がおかしい）
           
-                var answer = await DisplayAlert("お知らせ", "外部サイトを表示します",  "はい","いいえ");
+               // var answer = await DisplayAlert("お知らせ", "外部サイトを表示します",  "はい","いいえ");
 
-            if (answer)
-            {
                 Device.OpenUri(new Uri("http://bvedrive.azurewebsites.net"));
-
-            }
-            else
-            {
-                
-            }
             
 
         }
