@@ -10,11 +10,15 @@ using Xamarin.Forms.Xaml;
 namespace BVETimetable.time.hokkaido
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Page1 : ContentPage
+	public partial class N1page : ContentPage
 	{
-		public Page1 ()
-		{
-			InitializeComponent ();
-		}
-	}
+        public N1page()
+        {
+            InitializeComponent();
+
+            Padding = new Thickness(0, Device.OnPlatform(20, 0, 0), 0, 0);
+
+        }
+
+    }
 }

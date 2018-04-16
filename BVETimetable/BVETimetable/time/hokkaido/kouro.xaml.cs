@@ -19,7 +19,8 @@ namespace BVETimetable.time.hokkaido
         //任意の文字列の設定（ここに追加する）
         public string[] _loacls =
         {
-            "N1","東北","N3"//"東京電車特定"
+            "N1","N2","N3","N4","N5","N6","N7","N8"
+                //行路番号一覧
         };
         public string _select;
         public kouro()
@@ -46,15 +47,9 @@ namespace BVETimetable.time.hokkaido
 
                 {
                     case "N1":
-                        await Navigation.PushModalAsync(new hokkaido.Page1());
+                        await Navigation.PushModalAsync(new hokkaido.N1page());
                         break;
 
-                    case "東北":
-                        await Navigation.PushModalAsync(new tohoku.kouro());
-                        break;
-
-                    default:
-                        break;
 
                             //同様の処理をさせる
 

@@ -5,7 +5,6 @@
              Title="エリア選択">
     <ContentPage.Content>
         <StackLayout>
-            
             <ListView x:Name="arealist"
                       Header="地域を選択してください。"
                       RowHeight="60" 
