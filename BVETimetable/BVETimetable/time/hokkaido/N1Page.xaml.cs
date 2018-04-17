@@ -9,12 +9,13 @@ using Xamarin.Forms.Xaml;
 
 namespace BVETimetable.time.hokkaido
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
+	//[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class N1Page : ContentPage
 	{
 		public N1Page ()
 		{
 			InitializeComponent ();
+
 		}
 	}
 }

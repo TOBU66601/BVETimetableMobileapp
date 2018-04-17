@@ -2,11 +2,15 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BVETimetable.time.hokkaido.N1Page"
-             Title="列車選択">
+             Title="列車選択"
+             NavigationPage.HasNavigationBar="True"
+             >
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-               />
+            <Label Text="N1行路一覧"/>
+
+            <Label Text="下記ボタンより、乗務列車を選択してください。
+                  "></Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
