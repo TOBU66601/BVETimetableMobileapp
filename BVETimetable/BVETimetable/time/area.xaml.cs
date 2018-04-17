@@ -19,10 +19,9 @@ namespace BVETimetable.time
         //任意の文字列の設定（ここに追加する）
         public string[] _loacls =
         {
-            "北海道","東北",　"東京近郊"//"東京電車特定"
+            "北海道","東北",　"東京近郊"
         };
         public string _select;
-
         public area()
         {
             InitializeComponent();
@@ -68,6 +67,4 @@ namespace BVETimetable.time
         }
     }
 
-
-    //北海道が選択されたとき
 }

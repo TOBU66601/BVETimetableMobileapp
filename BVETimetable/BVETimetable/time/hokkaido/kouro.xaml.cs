@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.Collections.ObjectModel;
 
 namespace BVETimetable.time.hokkaido
 {
@@ -19,8 +19,7 @@ namespace BVETimetable.time.hokkaido
         //任意の文字列の設定（ここに追加する）
         public string[] _loacls =
         {
-            "N1","N2","N3","N4","N5","N6","N7","N8"
-                //行路番号一覧
+            "N1","N2","N3","N4","N5","N6","N7","N8"                //行路番号一覧
         };
         public string _select;
         public kouro()
@@ -47,10 +46,10 @@ namespace BVETimetable.time.hokkaido
 
                 {
                     case "N1":
-                        await Navigation.PushModalAsync(new hokkaido.N1page());
+                        await Navigation.PushModalAsync(new hokkaido.N1Page());
                         break;
 
-
+                    default:break;
                             //同様の処理をさせる
 
                     }

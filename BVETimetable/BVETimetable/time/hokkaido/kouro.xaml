@@ -2,15 +2,13 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BVETimetable.time.hokkaido.kouro"
-             
-             Title="行路選択">
+             Title="行路">
+    
     <ContentPage.Content>
         <StackLayout>
             <ListView x:Name="kourolist"
                       Header="乗務行路を選択してください。"
-                      RowHeight="60" 
-                      
-                     >
+                      RowHeight="60" >
                 
                 <ListView.ItemTemplate>
                     <DataTemplate>

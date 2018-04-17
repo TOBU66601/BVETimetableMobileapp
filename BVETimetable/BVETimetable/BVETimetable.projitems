@@ -27,8 +27,8 @@
       <DependentUpon>kouro.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)time\hokkaido\N1.xaml.cs">
-      <DependentUpon>N1.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)time\hokkaido\N1Page.xaml.cs">
+      <DependentUpon>N1Page.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)time\tohoku\kouro.xaml.cs">
@@ -71,7 +71,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)time\hokkaido\N1.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)time\hokkaido\N1Page.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
