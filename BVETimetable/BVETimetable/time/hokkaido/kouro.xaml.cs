@@ -42,7 +42,7 @@ namespace BVETimetable.time.hokkaido
                 switch (_select)
                 {
                     case "N1":
-                        await Navigation.PushModalAsync(new hokkaido.N1Page());
+                        await Navigation.PushAsync(new hokkaido.N1Page());
                         break;
 
                     default:break;

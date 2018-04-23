@@ -45,15 +45,15 @@ namespace BVETimetable.time
               
                 {
                     case "北海道":
-                        await Navigation.PushModalAsync(new hokkaido.kouro());
+                        await Navigation.PushAsync(new hokkaido.kouro());
                         break;
 
                     case "東北":
-                        await Navigation.PushModalAsync(new tohoku.kouro());
+                        await Navigation.PushAsync(new tohoku.kouro());
                         break;
 
                     case "東京近郊":
-                        await Navigation.PushModalAsync(new Kanto.KoroPage());
+                        await Navigation.PushAsync(new Kanto.KoroPage());
                         break;
 
                     default:
