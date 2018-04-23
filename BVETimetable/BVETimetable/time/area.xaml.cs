@@ -52,6 +52,10 @@ namespace BVETimetable.time
                         await Navigation.PushModalAsync(new tohoku.kouro());
                         break;
 
+                    case "東京近郊":
+                        await Navigation.PushModalAsync(new Kanto.KoroPage());
+                        break;
+
                     default:
                         break;
 
