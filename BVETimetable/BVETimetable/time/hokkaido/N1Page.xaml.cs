@@ -20,7 +20,8 @@ namespace BVETimetable.time.hokkaido
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            //Navigation.PushAsync(new N01.2120M());
+            Navigation.PushAsync(new Train.M2120());
+            //なんか知らないけどJRの列番方式だとNGなのね・・・てことは貨物もNG？？？
         }
 
         private void Button_Clicked_1(object sender, EventArgs e)

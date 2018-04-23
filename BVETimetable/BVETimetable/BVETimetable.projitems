@@ -35,6 +35,7 @@
       <DependentUpon>N1Page.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)time\hokkaido\Train\M2120.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)time\Kanto\KoroPage.xaml.cs">
       <DependentUpon>KoroPage.xaml</DependentUpon>
       <SubType>Code</SubType>
