@@ -7,10 +7,13 @@
              >
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="N1行路一覧"/>
+            <Label Text="N1行路表"/>
 
             <Label Text="下記ボタンより、乗務列車を選択してください。
                   "></Label>
+            <Button Text="2120M" Clicked="Button_Clicked"/>
+            <Button Text="121M" Clicked="Button_Clicked_1"/>
+            <Button Text="2124M" Clicked="Button_Clicked_2"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

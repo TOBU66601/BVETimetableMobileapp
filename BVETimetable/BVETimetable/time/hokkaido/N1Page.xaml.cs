@@ -17,5 +17,20 @@ namespace BVETimetable.time.hokkaido
 			InitializeComponent ();
 
 		}
-	}
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            //Navigation.PushAsync(new N01.2120M());
+        }
+
+        private void Button_Clicked_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button_Clicked_2(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

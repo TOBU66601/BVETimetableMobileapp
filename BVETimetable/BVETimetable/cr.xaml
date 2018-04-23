@@ -6,13 +6,17 @@
     <ContentPage.Padding>
         <OnPlatform x:TypeArguments="Thickness" iOS="0,20,0,0"></OnPlatform>
     </ContentPage.Padding>
-
-
-
     <StackLayout>
-        
-    <Button Text="お問い合わせ" 
-            Clicked="Button_Clicked"></Button>
+        <Label Text="法的情報"/>
+        <Label Text="Copyright 2017 jre657 All rights reserved."/>
+        <Label Text="取扱説明書"/>
+        <Label Text="本アプリは、BVE　日本線の運転を補助するアプリです。あらかじめBVE本体をインストールしてご利用ください。"/>
+
+        <Label Text="お問い合わせ"/>
+        <Label Text="お問い合わせは下記のボタンよりお願いします。"/>
+        <Label Text="※　ポータルサイトのフォームになっておりますが、"/>
+        <Button Text="お問い合わせ" Clicked="Button_Clicked"/>
+
     </StackLayout>
 
 </ContentPage>
