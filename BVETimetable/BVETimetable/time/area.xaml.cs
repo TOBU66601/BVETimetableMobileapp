@@ -19,7 +19,8 @@ namespace BVETimetable.time
         //任意の文字列の設定（ここに追加する）
         public string[] _loacls =
         {
-            "北海道","東北",　"東京近郊",//"東京電車特定"
+            "北海道","東北"
+                //,　"東京近郊",//"東京電車特定"
         };
         public string _select;
 
@@ -59,8 +60,8 @@ namespace BVETimetable.time
                 }
 
                 
-                await Navigation.PushModalAsync(targetPage);
-                //await DisplayAlert("Item Tapped", "An item was tapped.", "OK");だと全部アラート出る
+                await Navigation.PushModalAsync(area );
+                //await DisplayAlert("Item Tapped", "An item was tapped.", "OK");だと全部アラート出てしまう
 
 
             };
