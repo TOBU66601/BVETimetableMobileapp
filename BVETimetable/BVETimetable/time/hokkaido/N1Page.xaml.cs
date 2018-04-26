@@ -26,12 +26,12 @@ namespace BVETimetable.time.hokkaido
 
         private void Button_Clicked_1(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new Train.M121());
         }
 
         private void Button_Clicked_2(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new Train.M2124());
         }
     }
 }
