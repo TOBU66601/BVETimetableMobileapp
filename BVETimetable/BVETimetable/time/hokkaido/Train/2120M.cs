@@ -7,18 +7,21 @@ using Xamarin.Forms;
 
 namespace BVETimetable.time.hokkaido.Train
 {
-	public class M121 : ContentPage
+	public class Train2120M : ContentPage
 	{
-		public M121 ()
+		public Train2120M ()
 		{
-            Title = "121M 行路表";
+            //TitleをC#で記述
 
+            Title = "2120M 行路表";
+           
             var webView = new WebView
             {
                 Source = "https://bvedrive.azurewebsites.net/template.html" //ここをファイル名変更。（当分はてすとURL）
             };
             Padding = new Thickness(0, Device.OnPlatform(20, 0, 0), 0, 0);
             Content = webView;
-        }
+
+		}
 	}
 }

@@ -7,9 +7,9 @@ using Xamarin.Forms;
 
 namespace BVETimetable.time.hokkaido.Train
 {
-	public class M2124 : ContentPage
+	public class Train2124M : ContentPage
 	{
-		public M2124 ()
+		public Train2124M ()
 		{
             Title = "2124M 行路表";
 

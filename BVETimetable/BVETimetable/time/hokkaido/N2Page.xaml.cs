@@ -19,7 +19,7 @@ namespace BVETimetable.time.hokkaido
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Train.T2128M());
+            Navigation.PushAsync(new Train.Train2128M());
         }
 
         private void Button_Clicked_1(object sender, EventArgs e)
