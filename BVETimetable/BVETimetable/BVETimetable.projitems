@@ -39,6 +39,10 @@
       <DependentUpon>N2Page.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)time\hokkaido\N3Page.xaml.cs">
+      <DependentUpon>N3Page.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)time\hokkaido\Train\127M.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)time\hokkaido\Train\2128M.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)time\hokkaido\Train\121M.cs" />
@@ -108,6 +112,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)time\hokkaido\N2Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)time\hokkaido\N3Page.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
