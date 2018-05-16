@@ -39,10 +39,12 @@
       <DependentUpon>N2Page.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)time\hokkaido\Train\127M.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)time\hokkaido\Train\2128M.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)time\hokkaido\Train\121M.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)time\hokkaido\Train\2120M.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)time\hokkaido\Train\2124M.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)time\hokkaido\Train\2132M.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)time\Kanto\KoroPage.xaml.cs">
       <DependentUpon>KoroPage.xaml</DependentUpon>
       <SubType>Code</SubType>
