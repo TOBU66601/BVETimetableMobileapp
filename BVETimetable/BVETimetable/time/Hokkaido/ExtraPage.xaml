@@ -11,6 +11,16 @@
             <!--列車情報取得-->
             <Button Text="列車情報の更新"></Button>
             <Button Text="更新履歴の表示"></Button>
+            <ListView x:Name="ExtratrainListview" VerticalOptions="FillAndExpand">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ImageCell Text="{Binding Name}"
+                                   Detail="{Binding Title}">
+                            
+                        </ImageCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
