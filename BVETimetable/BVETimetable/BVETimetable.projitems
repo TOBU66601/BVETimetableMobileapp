@@ -27,6 +27,10 @@
       <DependentUpon>area.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)time\hokkaido\ExtraPage.xaml.cs">
+      <DependentUpon>ExtraPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)time\hokkaido\kouro.xaml.cs">
       <DependentUpon>kouro.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -43,12 +47,17 @@
       <DependentUpon>N3Page.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)time\hokkaido\N4Page.xaml.cs">
+      <DependentUpon>N4Page.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)time\hokkaido\Train\127M.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)time\hokkaido\Train\2128M.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)time\hokkaido\Train\121M.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)time\hokkaido\Train\2120M.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)time\hokkaido\Train\2124M.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)time\hokkaido\Train\2132M.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)time\hokkaido\Train\EXtrain.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)time\Kanto\KoroPage.xaml.cs">
       <DependentUpon>KoroPage.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -120,6 +129,18 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)time\hokkaido\N3Page.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)time\hokkaido\N4Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)time\hokkaido\ExtraPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
 </Project>

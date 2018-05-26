@@ -19,7 +19,7 @@ namespace BVETimetable.time.hokkaido
         //任意の文字列の設定（ここに追加する）
         public string[] _loacls =
         {
-            "N1","N2","N3","N4","N5","N6","N7","N8" //行路番号一覧
+            "N1","N2","N3","N4","N5","N6","N7","N8","その他" //行路番号一覧
         };
         public string _select;
         public kouro()
@@ -49,7 +49,17 @@ namespace BVETimetable.time.hokkaido
                         await Navigation.PushAsync(new N2Page());
                         break;
 
-                    
+                    case "N3":
+                        await Navigation.PushAsync(new N3Page());
+                        break;
+
+                    case "N4":
+                        await Navigation.PushAsync(new N4Page());
+                        break;
+
+                    case "その他":
+                        await Navigation.PushAsync(new ExtraPage());
+                        break;
 
                     default:
                         break;

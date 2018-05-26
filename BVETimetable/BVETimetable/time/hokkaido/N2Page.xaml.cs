@@ -12,7 +12,7 @@ namespace BVETimetable.time.hokkaido
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class N2Page : ContentPage
 	{
-		public N2Page ()
+		public N2Page()
 		{
 			InitializeComponent ();
 		}

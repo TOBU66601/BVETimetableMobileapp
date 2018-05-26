@@ -20,6 +20,8 @@ namespace BVETimetable
                 Source = "https://goo.gl/forms/xdxTn12ETjjBFHyF2"
             };
             Padding = new Thickness(0, Device.OnPlatform(20, 0, 0), 0, 0);
+
+
             Content = webView;
 
         }

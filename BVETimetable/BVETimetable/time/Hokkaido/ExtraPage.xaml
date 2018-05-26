@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BVETimetable.time.hokkaido.ExtraPage"
+             Title="列車選択">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="臨時列車用運転行路"/>
+            <Label Text="臨時列車専用の運転行路です。不定期に更新されるので、列車選択前には必ず最新の状態にしてください。"/>
+            <Label Text="なお、専用ページには更新履歴を掲載していますので、そちらもご覧ください。"/>
+            <!--列車情報取得-->
+            <Button Text="列車情報の更新"></Button>
+            <Button Text="更新履歴の表示"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
