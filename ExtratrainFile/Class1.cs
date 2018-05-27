@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 
 namespace ExtratrainFile
@@ -19,15 +20,15 @@ namespace ExtratrainFile
 
      class HokkaidoEXtrain
     {
-        public static void Main(string[]args)
+        public static void Main(string[] args)
         {
-            HokkaidoEXtrainInfo train = new HokkaidoEXtrainInfo
+            HokkaidoEXtrainInfo train1 = new HokkaidoEXtrainInfo
             {
                 KoroName = "試N601行路",
                 Targettrain = "試回9120M～試9120M～試9121M～試9122M～試9123M～試回9123M",
-                MadeDate = new DateTime(2018,4,6,13,30,46),
+                MadeDate = new DateTime(2018, 4, 6, 13, 30, 46),
                 TargetDay = DateTime.Now,
-                Trainnumbers=new List<string>
+                Trainnumbers = new List<string>
                 {
 
                 "試回9120M",
@@ -37,14 +38,19 @@ namespace ExtratrainFile
                     "試9123M",
                     "試回9123M",
                 }
-                
+
+
+
             };
 
-           //Trainnumbers<string>での列車から設定。リンクは偽リンクを発生させる。
-            
+            string json = JsonConvert.SerializeObject(train1, Formatting.Indented);
+            Console.WriteLine(json);
+
+            //Trainnumbers<string>での列車から設定。リンクは偽リンクを発生させる。
+
             //押したときに文字で見分けないといけないのでもうすこしすすんだら再確認。Stacklayoutで
 
-            
+
         }
         
     }
