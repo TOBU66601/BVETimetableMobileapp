@@ -57,9 +57,9 @@ namespace BVETimetable.time.hokkaido
                         await Navigation.PushAsync(new N4Page());
                         break;
 
-                    case "その他":
-                        await Navigation.PushAsync(new ExtraPage());
-                        break;
+                    //case "その他":
+                      //  await Navigation.PushAsync(new ExtraPage());
+                        //break;
 
                     default:
                         break;

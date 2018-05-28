@@ -2,10 +2,19 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BVETimetable.time.hokkaido.N3Page"
-             Title="N3行路表">
+             Title="列車選択">
     <ContentPage.Content>
         <StackLayout>
-           
+            <Label Text="N3行路表"/>
+            <Label Text="下記ボタンより、乗務列車を選択してください。"/>
+            <Button Text="2136M"/>
+            <Button Text="133M"/>
+            <Button Text="140M"/>
+            <Button Text="135M"/>
+            <Button Text="142M"/>
+            <Button Text="144M"/>
+            <Button Text="139M"/>
+            <Button Text="2148M"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

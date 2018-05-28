@@ -1,12 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BVETimetable.time.hokkaido.N4Page">
+             x:Class="BVETimetable.time.hokkaido.N4Page"
+             Title="列車選択"
+             >
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="N4行路表"/>
+            <Label Text="下記ボタンより、乗務列車を選択してください。"/>
+            <Button Text="2122M"/>
+            <Button Text="123M"/>
+            <Button Text="126M"/>
+            <Button Text="125M"/>
+            <Button Text="130M"/>
+            <Button Text="129M"/>
+            <Button Text="134M"/>
+            <Button Text="131M"/>
+            <Button Text="2136M"/>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
