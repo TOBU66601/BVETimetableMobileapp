@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BVETimetable.time.hokkaido.N5Page"
+             Title="列車選択">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="N5行路表"/>
+            <Label Text="下記ボタンより、乗務列車を選択してください。"/>
+
+            <Button Text="2143M"/>
+            <Button Text="152M"/>
+            <Button Text="147M"/>
+            <Button Text="156M"/>
+            <Button Text="149M"/>
+            <Button Text="158M"/>
+            <Button Text="151M"/>
+            <Button Text="160M"/>
+            <Button Text="153M"/>
+            <Button Text="162M"/>
+            <Button Text="155M"/>
+            <Button Text="2164M"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

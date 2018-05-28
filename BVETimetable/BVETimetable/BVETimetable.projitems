@@ -51,6 +51,10 @@
       <DependentUpon>N4Page.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)time\hokkaido\N5Page.xaml.cs">
+      <DependentUpon>N5Page.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)time\hokkaido\Train\127M.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)time\hokkaido\Train\2128M.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)time\hokkaido\Train\121M.cs" />
@@ -141,6 +145,12 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)time\hokkaido\ExtraPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)time\hokkaido\N5Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
 </Project>
